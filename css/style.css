@@ -1,10 +1,37 @@
 * {
-    /* border: 1px solid red; */
+    font-family: 'Bangers', system-ui;
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    max-width: 100px;
+}
+
+.btn-sign-up{
+    border: 2px solid white;
+    padding: 10px 25px;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB
 }
 
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 ul {
@@ -17,9 +44,17 @@ ul {
 
 .header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: #1F2937;
     color: #F9FAF8;
+}
+
+.sub-header {
+    display: flex;
+    gap: 60px;
+    padding: 20px;
 }
 
 .container {
@@ -37,27 +72,62 @@ ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
-    
+    max-width: 320px;
 }
 
+.title {
+    align-self: center;
+}
+
+.container-row {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+}
 
 
 .quote {
     display: flex;
-    padding: 50px;
-
-
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #E5E7EB;
+    padding: 60px;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.quote .selected {
+    align-self: flex-end;
+    margin-right: 50px;
+}
+
+.sign-up {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 20px;
+    margin: 60px;
+    color: white;
+    gap: 20px;
 }
 
 .footer {
-    display: flex;
-    margin-top: auto;
+    min-height: 7vh;
+    text-align: center;
     color: #F9FAF8;
     background-color: #1F2937;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
